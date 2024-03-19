@@ -4,26 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web - Página 3</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        table {
+            width: 100%;
+            margin-bottom: 1rem;
+            color: #212529;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            vertical-align: top;
+            border-top: 1px solid #dee2e6;
+        }
+
+        thead th {
+            vertical-align: bottom;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        tbody + tbody {
+            border-top: 2px solid #dee2e6;
+        }
+
+        table caption {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            color: #6c757d;
+            text-align: left;
+            caption-side: bottom;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="jumbotron text-center">
         <h1>Mi Página Web - Página 3</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Página 1</a>
-        <a href="pagina2.html">Página 2</a>
-        <a href="pagina3.html">Página 3</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">TEXTO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pagina2.html" class="nav-link">IMAGEN</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="pagina3.html" class="nav-link">TABLAS</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <section>
+    <section class="container mt-5">
         <table>
             <caption>Tabla 2</caption>
             <thead>
                 <tr>
-                    <th rowspan="1" colspan="3" style="background-color: rgba(25,48,154,0.2);">A</th>
-                    <th rowspan="1" colspan="3" style="background-color: rgba(25,48,154,0.2);">E</th>
+                    <th rowspan="1" colspan="3" style="background-color: rgba(80, 96, 172, 0.2);">A</th>
+                    <th rowspan="1" colspan="3" style="background-color: rgba(28, 42, 104, 0.2);">E</th>
                 </tr>
                 <tr>
                     <th>B</th>
@@ -58,8 +100,8 @@
             <caption>Tabla 3</caption>
             <thead>
                 <tr>
-                    <th rowspan="2" colspan="3" style="background-color: rgba(25,48,154,0.2);">A</th>
-                    <th rowspan="1" colspan="3" style="background-color: rgba(25,48,154,0.2);">E</th>
+                    <th rowspan="2" colspan="1" style="background-color: rgba(134, 142, 178, 0.2);">A</th>
+                    <th rowspan="1" colspan="3" style="background-color: rgba(42, 59, 132, 0.2);">E</th>
                 </tr>
                 <tr>
                     <th>B</th>
@@ -70,26 +112,26 @@
             <tbody>
                 <tr>
                     <td>Aguila</td>
-                    <td>Montañas</td>
-                    <td>Carnívoro</td>
                     <td>dato4</td>
                     <td>dato5</td>
                     <td>dato6</td>
                 </tr>
                 <tr>
-                    <td>Colibrí</td>
-                    <td>Bosque tropical</td>
-                    <td>Herbívoro</td>
                     <td>dato7</td>
                     <td>dato8</td>
                     <td>dato9</td>
+                    <td>dato10</td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <footer>
+    <footer class="text-center mt-5">
         <p>Derechos de autor © 2024 Mi Página Web</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

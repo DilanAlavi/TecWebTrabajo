@@ -4,30 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página Web</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Estilos personalizados */
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: 768px) {
+      .image-container {
+        float: right;
+        margin-left: 20px;
+        margin-bottom: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Mi Página Web</h1>
+  <header class="jumbotron text-center">
+    <h1>PAGINA WEB</h1>
   </header>
-  <nav>
-    <a href="index.html">Página 1</a>
-    <a href="pagina2.html">Página 2</a>
-    <a href="pagina3.html">Página 3</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">TEXTO</a>
+        </li>
+        <li class="nav-item">
+            <a href="pagina2.html" class="nav-link">IMAGEN</a>
+        </li>
+        <li class="nav-item active">
+            <a href="pagina3.html" class="nav-link">TABLAS</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-  <section>
-    <!-- Contenido específico de cada página se insertará aquí -->
-    <div class="encabezados">
+  <div class="container">
+    <section class="mt-5">
+      <!-- Contenido específico de cada página se insertará aquí -->
+      <div class="encabezados">
         <h1>Flores</h1>
         <h2>Estudio botánico</h2>
-            <h3>Raíces</h3>
-                <h4>Sistemas radiculares</h4>
-            <h3>Tallos</h3>
-                <h4>Tipos de tallos</h4>
-    </div> 
-
-    <!-- PARRAFOS  -->
-    <div class="parrafos">
+        <h3>Raíces</h3>
+        <h4>Sistemas radiculares</h4>
+        <h3>Tallos</h3>
+        <h4>Tipos de tallos</h4>
+      </div> 
+      <!-- Inserta la imagen aquí -->
+      <div class="image-container">
+        <img src="botanica.jpg" alt="Imagen de una flor" title="Flor">
+      </div>
+      <!-- PÁRRAFOS  -->
+      <div class="parrafos">
         <p>En un rincón del alma,<br>
             donde tengo la herida,<br>
             crece la flor del sueño,<br>
@@ -35,191 +70,190 @@
         <p>Una rosa blanca<br>
             es poesía en un jardín<br>
             de letras dormidas.</p>
-    </div> 
-    
-    <!-- SALTO DE LINEA -->
-    <div class="salto-de-linea">
-        <p>
-            Tres tristes tigres,<br>
-            tragaban trigo en un trigal,<br>
-            en tres tristes trastos.<br>
-            Trigaban con tristeza,<br>
-            la tristeza que tragaban.<br>
-        </p>
-        <p>
-            Pedro Pérez<br>
-            Calle del Pez, 23<br>
-            Madrid
-        </p>
-    </div> 
+      </div> 
 
-    <!-- CAMBIO DE TEMA -->
-     <div class="cambio-de-tema">
+      <!-- SALTO DE LÍNEA -->
+      <div class="salto-de-linea">
+        <p>
+          Tres tristes tigres,<br>
+          tragaban trigo en un trigal,<br>
+          en tres tristes trastos.<br>
+          Trigaban con tristeza,<br>
+          la tristeza que tragaban.<br>
+        </p>
+        <p>
+          Pedro Pérez<br>
+          Calle del Pez, 23<br>
+          Madrid
+        </p>
+      </div> 
+
+      <!-- CAMBIO DE TEMA -->
+      <div class="cambio-de-tema">
         <p>§1: La vida es aquello que te va sucediendo mientras tú te empeñas en hacer otros planes.</p>
         <hr>
         <p>§2: La felicidad es real solo cuando se comparte.</p>
-    </div> 
+      </div> 
 
-    <!-- WORD BREAK OPPORTUNITY -->
-     <div class="wbo">
+      <!-- WORD BREAK OPPORTUNITY -->
+      <div class="wbo">
         <p> 
-            Hay una frase que describe la habilidad mágica<br>
-            de salir ileso de situaciones difíciles. Esta frase es:<br>
-            Supercalifragilisticoespialidoso
+          Hay una frase que describe la habilidad mágica<br>
+          de salir ileso de situaciones difíciles. Esta frase es:<br>
+          Supercalifragilisticoespialidoso
         </p>    
-    </div> 
+      </div> 
 
-    <!-- SUPERINDICE -->
-    <div class="superindice">
+      <!-- SUPERÍNDICE -->
+      <div class="superindice">
         <p>La fórmula más conocida del universo es: </p>
         <p>E = m.c <sup>2</sup></p>
-    </div> 
+      </div> 
 
-    <!-- SUBINDICE -->
-    <div class="subindice">
+      <!-- SUBÍNDICE -->
+      <div class="subindice">
         <p>
-            El mejor amigo de un químico es: 
-            C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>,
-            también conocido como...  
+          El mejor amigo de un químico es: 
+          C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>,
+          también conocido como...  
         </p>
-    </div>
+      </div>
 
-    <!-- TEXTO MUY IMPORTANTE -->
-    <div class="texto-muy-importante">
+      <!-- TEXTO MUY IMPORTANTE -->
+      <div class="texto-muy-importante">
         <p>
-            ... la regla más fundamental, la regla que nunca puedes olvidar, 
-            no importa cuánto llores, no importa cuánto supliques: 
-           <strong><strong>nunca des comida después de la medianoche </strong></strong>
+          ... la regla más fundamental, la regla que nunca puedes olvidar, 
+          no importa cuánto llores, no importa cuánto supliques: 
+         <strong><strong>nunca des comida después de la medianoche </strong></strong>
         </p>
-    </div> 
+      </div> 
 
-    
-    <!-- ENFASIS -->
-    <div class="enfasis">
+      
+      <!-- ENFASIS -->
+      <div class="enfasis">
         <p>
-            <em>A ella</em> le encantan tus pinturas
+          <em>A ella</em> le encantan tus pinturas
         </p>
         <p>
-            A ella le encantan <em>tus</em> pinturas
+          A ella le encantan <em>tus</em> pinturas
         </p>
-    </div>         
+      </div>         
 
-    <!-- RESALTADO -->
-    <div class="resaltado">
+      <!-- RESALTADO -->
+      <div class="resaltado">
         <p>
-            Sócrates
-            hacía el tonto, fingía ser más ignorante de lo
-            que realmente era. A esto se le llama <mark>ironía socrática</mark>.
+          Sócrates
+          hacía el tonto, fingía ser más ignorante de lo
+          que realmente era. A esto se le llama <mark>ironía socrática</mark>.
         </p>
-    </div> 
+      </div> 
 
-    <!-- CITA EN LINEA -->
-    <div class="cita-en-linea">
+      <!-- CITA EN LÍNEA -->
+      <div class="cita-en-linea">
         <p>When Neo asks Morpheus about the Matrix, Morpheus answers: <q cite="https://www.imdb.com/title/tt0133093/quotes/qt0369702">Unfortunately, no one can be told what the Matrix is. You have to see it for yourself.</q></p>
-    </div> 
+      </div> 
 
-    <!-- CITA EN BLOQUE -->
-    <figure>
-        <blockquote cite="https://www.goodreads.com/quotes/117579-the-truth-may-be-puzzling-it-may-take-some-work">
-            <p>
-                La verdad puede ser desconcertante. Puede tomar algo de trabajo para digerirse. 
-                Puede ser contraintuitiva. Puede contradecir prejuicios profundamente arraigados. 
-                Puede que no sea acorde con lo que desesperadamente queremos que sea verdad. 
-                Pero nuestras preferencias no determinan la verdad.
-            </p>
+      <!-- CITA EN BLOQUE -->
+      <figure class="blockquote">
+        <blockquote class="blockquote">
+          <p>
+              La verdad puede ser desconcertante. Puede tomar algo de trabajo para digerirse. 
+              Puede ser contraintuitiva. Puede contradecir prejuicios profundamente arraigados. 
+              Puede que no sea acorde con lo que desesperadamente queremos que sea verdad. 
+              Pero nuestras preferencias no determinan la verdad.
+          </p>
         </blockquote>
-        <figcaption>Carl Sagan, "<cite>Wonder and Skepticism</cite>"</figcaption>
-    </figure> 
+        <figcaption class="blockquote-footer">Carl Sagan, "<cite>Wonder and Skepticism</cite>"</figcaption>
+      </figure> 
 
-    <!-- TÍTULO DE UN TRABAJO -->
-     <div class="titulo-de-trabajo">
+      <!-- TÍTULO DE UN TRABAJO -->
+      <div class="titulo-de-trabajo">
         <p>Mi libro favorito es <cite>El Señor de los Anillos</cite> de J.R.R. Tolkien</p>
         <hr>
         <figure>
-            <blockquote>
-                <p>
-                    Entre los habitantes de una aldea hay un, y solo un, barbero. Es un hombre 
-                    pulcro, respetado, que afeita a todos los hombres de la aldea que no se 
-                    afeitan a sí mismos, y solo a ellos. ¿Quién afeita al barbero?            
-                </p>
-                <p>
-                    En principio parece razonable que el barbero se afeite a sí mismo. Pero en 
-                    ese caso viola el requerimiento de afeitar a todos los aldeanos que no se 
-                    afeitan a sí mismos. Y si no se afeita a sí mismo, viola el requerimiento 
-                    de afeitar a todos los aldeanos que no se afeitan a sí mismos.                     
-                </p>
-            </blockquote>
-        <figcaption>Nicholas Falleta, "<cite>Las trampas de la paradoja</cite>"</figcaption>
+          <blockquote>
+            <p>
+                Entre los habitantes de una aldea hay un, y solo un, barbero. Es un hombre 
+                pulcro, respetado, que afeita a todos los hombres de la aldea que no se 
+                afeitan a sí mismos, y solo a ellos. ¿Quién afeita al barbero?            
+            </p>
+            <p>
+                En principio parece razonable que el barbero se afeite a sí mismo. Pero en 
+                ese caso viola el requerimiento de afeitar a todos los aldeanos que no se 
+                afeitan a sí mismos. Y si no se afeita a sí mismo, viola el requerimiento 
+                de afeitar a todos los aldeanos que no se afeitan a sí mismos.                     
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">Nicholas Falleta, "<cite>Las trampas de la paradoja</cite>"</figcaption>
         </figure>
-    </div> 
+      </div> 
 
-    <!-- DEFINICIÓN DE TÉRMINOS -->
-
-     <div class="definiciones">
+      <!-- DEFINICIÓN DE TÉRMINOS -->
+      <div class="definiciones">
         <p>
             Un <dfn>verificador ortográfico</dfn> es una herramienta que revisa
             errores de escritura en un texto.
         </p>
-    </div> 
+      </div> 
 
-    <!-- ABREVIATURAS -->
-     <div class="abreviaturas">
+      <!-- ABREVIATURAS -->
+      <div class="abreviaturas">
         <p>
             Puedes usar <abbr title="Cascading Style Sheets">CSS</abbr> 
             para darle estilo a tu <abbr title="HyperText Markup Language">HTML</abbr>.
         </p>
-    </div> 
+      </div> 
 
-    <!-- TEXTO PEQUEÑO -->
-    <div class="texto">
+      <!-- TEXTO PEQUEÑO -->
+      <div class="texto">
         <p>MDN Web Docs es una plataforma de aprendizaje de tecnologías web y el software 
             que impulsa la web.</p>
         <hr>
         <p><small>El contenido está disponible bajo una licencia Creative Commons.</small></p>
-    </div>
+      </div>
 
-    <!-- TEXTO AÑADIDO (El señor de los anillos)-->
-    <div class="texto-agregado">
+      <!-- TEXTO AÑADIDO (El señor de los anillos)-->
+      <div class="texto-agregado">
         <p>“Estás a tiempo!”</p>
         <del><p>“Lo siento por la demora.”</p></del>
         <ins cite="../comoserunmagico.html" datetime="2018-05"><p>“Un mago siempre llega a tiempo…”</p></ins>
-    </div> 
+      </div> 
 
-    <!-- TEXTO ELIMINADO -->
-    <div class="texto-eliminado">
+      <!-- TEXTO ELIMINADO -->
+      <div class="texto-eliminado">
         <p>“¡Estás atrasado!”</p>
         <del><p>“Me disculpo por el retraso.”</p></del>
         <ins cite="../comoserunmagico.html" datetime="2018-05"><p>“Un mago nunca llega tarde…”</p></ins>
-    </div> 
+      </div> 
 
-    <!-- TACHAR TEXTO -->
-    <div class="tachar-texto">
+      <!-- TACHAR TEXTO -->
+      <div class="tachar-texto">
         <p><s>Habrá algunas entradas disponibles esta noche.</s></p>
         <p>¡AGOTADO!</p>
-    </div>
-    <hr>
-    <div class="tachar-texto">
+      </div>
+      <hr>
+      <div class="tachar-texto">
         <p>¡Compra nuestra soda y limonada!</p>
         <p><s>Precio de venta recomendado: $3,99 por botella</s></p>
         <p><strong>¡Ahora a la venta por solo $2.99 la botella!</strong></p>
-    </div> 
+      </div> 
 
-    <!-- CODIGO -->
-     <div class="codigo">
+      <!-- CÓDIGO -->
+      <div class="codigo">
         <p>El método <code>append()</code> agrega uno o más elementos al final de una lista y devuelve la nueva longitud de la lista.</p>
-    </div>
-    <hr>
-    <div class="codigo">
+      </div>
+      <hr>
+      <div class="codigo">
         <pre>
-            <code class="language-python">
-                def saludar():
-                    print("Hola, mundo!")
-            </code>
+          <code class="language-python">
+              def saludar():
+                  print("Hola, mundo!")
+          </code>
         </pre>
-    </div> 
+      </div> 
 
-    <!-- SALIDA DE COMPUTADORA -->
-    <div class="salida-computadora">
+      <!-- SALIDA DE COMPUTADORA -->
+      <div class="salida-computadora">
         <p>Estaba intentando arrancar mi computadora, pero recibí este mensaje divertido:</p>
         <p>
             <samp>
@@ -227,18 +261,18 @@
                 Presione F1 para continuar
             </samp>
         </p>
-    </div>
+      </div>
 
-    <!-- ENTRADA DE USUARIO -->
-    <div class="entrada-usuario">
+      <!-- ENTRADA DE USUARIO -->
+      <div class="entrada-usuario">
         <p>
             Para copiar un texto, selecciónelo  y luego presione 
             <kbd><kbd>Ctrl</kbd>+<kbd>C</kbd></kbd>.
         </p>
-    </div> 
+      </div> 
 
-    <!-- CONSERVAR FORMATO -->
-     <div class="conservar-formato">
+      <!-- CONSERVAR FORMATO -->
+      <div class="conservar-formato">
         <pre>
             ___________________________
              Soy un experto en mi campo.
@@ -249,40 +283,44 @@
                         ||----w |
                         ||     ||
         </pre>        
-    </div>
-    <hr>
-    <div class="conservar-formato">
+      </div>
+      <hr>
+      <div class="conservar-formato">
         <p>Usar CSS para cambiar el color del texto es fácil.</p>
         <pre>
         body {
             color: blue;
         }
         </pre>
-    </div> 
+      </div> 
 
-    <!-- INFORMACION DE CONTACTO -->
-    <div class="contacto">
+      <!-- INFORMACIÓN DE CONTACTO -->
+      <div class="contacto">
         <p>Contacte al autor de esta página:</p>
         <address>
             <a href="mailto:jim@rock.com">dilan.alavi@ucb.edu.bo</a><br>
             <a href="tel:+13115552368">(311) 555-2368</a>
         </address>
-    </div>
+      </div>
 
-    <!-- CARACTERES ESPECIALES -->
-    <div class="caracteres-especiales">
+      <!-- CARACTERES ESPECIALES -->
+      <div class="caracteres-especiales">
         <p>
             El elemento &lt;html&gt; representa la raíz de un documento HTML, 
             por lo que también se llama elemento raíz. Todos los demás 
             elementos deben ser descendientes de este elemento.
         </p>
-    </div>
-    <div class="caracteres-especiales">
-            &lt;p&gt;
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            &lt;/p&gt;
-    </div>
-  </section>
+      </div>
+      <div class="caracteres-especiales">
+              &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              &lt;/p&gt;
+      </div>
+    </section>
+  </div>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

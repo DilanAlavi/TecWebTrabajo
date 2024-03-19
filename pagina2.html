@@ -4,24 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página Web - Página 2</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    .imagenes {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .imagenes img {
+      max-width: 30%;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="jumbotron text-center">
     <h1>Mi Página Web - Página 2</h1>
   </header>
-  <nav>
-    <a href="index.html">Página 1</a>
-    <a href="pagina2.html">Página 2</a>
-    <a href="pagina3.html">Página 3</a>
-  </nav>
-  <section>
-    <!-- Contenido específico de la página 2 se insertará aquí -->
-    <div class="imagenes">
-        <img src="imagen1.jpg" alt="Imagen 1">
-        <img src="imagen2.png" alt="Imagen 2">
-        <img src="imagen3.gif" alt="Imagen 3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">TEXTO</a>
+      </li>
+      <li class="nav-item">
+          <a href="pagina2.html" class="nav-link">IMAGEN</a>
+      </li>
+      <li class="nav-item active">
+          <a href="pagina3.html" class="nav-link">TABLAS</a>
+      </li>
+      </ul>
     </div>
-  </section>
+  </nav>
+  <div class="container">
+    <section class="mt-5">
+      <!-- Contenido específico de la página 2 se insertará aquí -->
+      <div class="imagenes">
+          <img src="imagen1.jpg" alt="Imagen 1">
+          <img src="imagen2.png" alt="Imagen 2">
+          <img src="imagen3.gif" alt="Imagen 3">
+      </div>
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
